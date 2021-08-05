@@ -1,0 +1,10 @@
+
+.hero__image {
+    background-image: linear-gradient(rgba($color-accent,.4), rgba($color-accent,.4)), url(../images/image-header-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    filter: contrast(130%) brightness(70%);
+}
