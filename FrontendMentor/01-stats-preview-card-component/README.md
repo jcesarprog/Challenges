@@ -45,7 +45,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github solution](https://github.com/jcesarprog/Challenges/tree/main/FrontendMentor/01-stats-preview-card-component)
-- Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/01-stats-preview-card-component/)
+- Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/FrontendMentor/01-stats-preview-card-component/)
 
 ## My process
 As soon as i've seen the pictures i've thought in terms of css grid and flexbox items
