@@ -46,7 +46,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github solution](https://github.com/jcesarprog/Challenges/tree/main/01-stats-preview-card-component)
+- Solution URL: [Github solution](https://github.com/jcesarprog/Challenges/tree/main/FrontendMentor/01-stats-preview-card-component)
 - Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/01-stats-preview-card-component/)
 
 ## My process
