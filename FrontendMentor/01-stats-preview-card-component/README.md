@@ -7,9 +7,10 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 - [Frontend Mentor - Stats preview card component solution](#frontend-mentor---stats-preview-card-component-solution)
   - [Table of contents](#table-of-contents)
 - [Frontend Mentor - Stats preview card component](#frontend-mentor---stats-preview-card-component)
-  - [Welcome! 👋](#welcome-)
   - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
+      - [Mobile view](#mobile-view)
+      - [Desktop view](#desktop-view)
     - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
@@ -18,14 +19,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 # Frontend Mentor - Stats preview card component
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
 ## The challenge
 
@@ -44,23 +37,24 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshot
-
+#### Mobile view
 ![](./screenshot-mobile.png)
+#### Desktop view
 ![](./screenshot-desktop.png)
 
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github solution](https://github.com/jcesarprog/Challenges/tree/main/01-stats-preview-card-component)
+- Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/01-stats-preview-card-component/)
 
 ## My process
 As soon as i've seen the pictures i've thought in terms of css grid and flexbox items
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
