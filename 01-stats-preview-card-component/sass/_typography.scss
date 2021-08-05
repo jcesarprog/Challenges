@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+.container {
+    font-size: $font-size;
+}
+
+.main__title,
+.stats__feature-number {
+    font-family: "Inter";
+    font-weight: 700;
+    color: $color-heading-and-stats;
+}
+
+.main__paragraph,
+.stats__feature-description {
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: $color-paragraph;
+}
+
+.main__title span {
+    color: $color-accent;
+}
+
+.attribution {
+    margin-top: 2rem;
+    text-align: center;
+    color: $color-heading-and-stats;
+    font-size: 1.2rem;
+    @media only screen and (min-width: $bp-large) {
+        font-size: 2rem;
+    }
+}
