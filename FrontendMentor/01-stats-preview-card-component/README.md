@@ -30,8 +30,6 @@ Your users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
