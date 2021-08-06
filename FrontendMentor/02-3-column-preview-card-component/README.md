@@ -41,7 +41,8 @@ Users should be able to:
 - Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/FrontendMentor/02-3-column-preview-card-component/)
 
 ## My process
-As soon as i've seen the layouts i thougt in terms of CSS Grids and Flexbox
+- As soon as i've seen the layouts i thought in terms of CSS Grids and Flexbox.
+- Used BEM CSS methodology.
 ### Built with
 
 - Semantic HTML5 markup

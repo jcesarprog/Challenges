@@ -48,7 +48,8 @@ Users should be able to:
 - Live Site URL: [Live site](https://jcesarprog.github.io/Challenges/FrontendMentor/01-stats-preview-card-component/)
 
 ## My process
-As soon as i've seen the pictures i've thought in terms of css grid and flexbox items
+- As soon as i've seen the layouts i've thought in terms of CSS Grids and Flexbox.
+- Used BEM CSS methodology.
 ### Built with
 
 - Semantic HTML5 markup
