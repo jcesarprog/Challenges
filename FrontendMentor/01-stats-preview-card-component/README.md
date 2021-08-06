@@ -61,7 +61,7 @@ As soon as i've seen the pictures i've thought in terms of css grid and flexbox 
 
 - Website - [Julio Teixeira](https://www.your-site.com)
 - Frontend Mentor - [@jcesarprog](https://www.frontendmentor.io/profile/jcesarprog)
-- Twitter - [@jcesarprog](https://www.twitter.com/yourusername)
+- Twitter - [@jcesarprog](https://www.twitter.com/jcesarprog)
 
 ## Acknowledgments
 
