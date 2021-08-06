@@ -1,0 +1,189 @@
+/*
+## Colors
+
+### Primary
+
+Bright orange: 
+Dark cyan: hsl(184, 100%, 22%)
+Very dark cyan: hsl(179, 100%, 13%)
+
+### Neutral
+
+Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+.card {
+  font-size: 1.5rem;
+}
+
+.card__heading {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+}
+
+.card__paragraph, .card__cta {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+}
+
+.card__heading, .card__paragraph {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 90em;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 90em) {
+  body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.container {
+  max-width: 90vw;
+  margin: 5rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (minmax(min-content, 1fr))[3];
+      grid-template-rows: repeat(3, minmax(-webkit-min-content, 1fr));
+      grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  overflow: hidden;
+  -webkit-border-radius: .5rem;
+          border-radius: .5rem;
+}
+
+@media only screen and (min-width: 90em) {
+  .container {
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -ms-grid-columns: (minmax(min-content, 1fr))[3];
+        grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  }
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attribution a:link,
+.attribution a:visited {
+  color: #3e52a3;
+}
+
+@media only screen and (min-width: 90em) {
+  .attribution {
+    font-size: 1.7rem;
+  }
+}
+
+.card {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.card-1 {
+  background-color: #e38826;
+}
+
+.card-1 .card__cta:link,
+.card-1 .card__cta:visited {
+  color: #e38826;
+}
+
+.card-2 {
+  background-color: #006970;
+}
+
+.card-2 .card__cta:link,
+.card-2 .card__cta:visited {
+  color: #006970;
+}
+
+.card-3 {
+  background-color: #004241;
+}
+
+.card-3 .card__cta:link,
+.card-3 .card__cta:visited {
+  color: #004241;
+}
+
+.card__img {
+  width: 7rem;
+  height: 4rem;
+}
+
+.card__paragraph {
+  margin-bottom: 2rem;
+}
+
+.card__cta {
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem 3rem;
+  background-color: #f2f2f2;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  -webkit-border-radius: 10rem;
+          border-radius: 10rem;
+}

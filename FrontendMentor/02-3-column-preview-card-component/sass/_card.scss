@@ -1,0 +1,51 @@
+.card {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: space-around;
+    
+    &-1{
+        background-color: $color-orange;
+        .card__cta:link,
+        .card__cta:visited {
+            color: $color-orange;
+        }
+    }
+    &-2{
+        background-color: $color-cyan;
+        .card__cta:link,
+        .card__cta:visited {
+            color: $color-cyan;
+        }
+    }
+    &-3{
+        background-color: $color-cyan-dark;
+        .card__cta:link,
+        .card__cta:visited {
+            color: $color-cyan-dark;
+        }
+    }
+
+    &__img {
+        width: 7rem;
+        height: 4rem;
+    }
+    
+    &__heading {
+        
+    }
+
+    &__paragraph{
+        margin-bottom: 2rem;
+    }
+
+    &__cta{
+        text-decoration: none;
+        display: block;
+        padding: 1.5rem 3rem;
+        background-color: $color-light-gray;
+        align-self: flex-start;
+        border-radius: 10rem;
+    }
+}
