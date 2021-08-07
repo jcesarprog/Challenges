@@ -1,0 +1,235 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+.container {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1.5rem;
+}
+
+.card__plans-heading {
+  font-size: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #e0e8ff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  width: 85vw;
+  margin: 5rem auto;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .container {
+    max-width: 32.5em;
+  }
+}
+
+.card {
+  background-color: #f5f7ff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__main-paragraphy, .card__plans-price {
+  color: #7280a7;
+}
+
+.card__hero {
+  width: 100%;
+}
+
+.card__hero img {
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+.card__main {
+  padding: 1rem;
+  text-align: center;
+}
+
+.card__main-title {
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.card__main-paragraphy {
+  margin-top: 1rem;
+}
+
+.card__plans {
+  background-color: #f6f7f9;
+  width: 100%;
+  padding: 2rem;
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2rem;
+     -moz-column-gap: 2rem;
+          column-gap: 2rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__plans-icon {
+  width: 4rem;
+}
+
+.card__plans-description {
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+  .card__plans-description {
+    margin-right: 10rem;
+  }
+}
+
+.card__plans-change-btn {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card__plans-change-btn:link, .card__plans-change-btn:visited {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.card__plans-change-btn:hover {
+  text-decoration: none;
+  color: #7280a7;
+}
+
+.card__order {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 85%;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.card__order-cta {
+  -webkit-border-radius: 1rem;
+          border-radius: 1rem;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  font-weight: 900;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card__order-cta:first-child {
+  color: #e0e8ff;
+  background-color: #3829e0;
+  -webkit-box-shadow: 0 1rem 1.5rem rgba(31, 47, 86, 0.3);
+          box-shadow: 0 1rem 1.5rem rgba(31, 47, 86, 0.3);
+}
+
+.card__order-cta:first-child:hover, .card__order-cta:first-child:active {
+  background-color: #6255e7;
+}
+
+.card__order-cta:last-child {
+  background-color: #f5f7ff;
+  color: #7280a7;
+}
+
+.card__order-cta:last-child:hover, .card__order-cta:last-child:active {
+  color: #000;
+}

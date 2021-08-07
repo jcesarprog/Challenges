@@ -1,0 +1,101 @@
+.card {
+    background-color: $color-secondary;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+
+    &__main-paragraphy,
+    &__plans-price {
+        color: $color-secondary-dark;
+    }
+
+    &__hero {
+        width: 100%;
+        img {
+            filter: contrast(120%);
+        }
+    }
+
+    &__main {
+        padding: 1rem;
+        text-align: center;
+        &-title {
+            font-size: 2.3rem;
+            font-weight: 900;
+        }
+        &-paragraphy {
+            margin-top: 1rem;
+        }
+    }
+
+    &__plans {
+        background-color: lighten($color-secondary-dark, 42%);
+        width: 100%;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        &-icon {
+            width: 4rem;
+        }
+        &-description {
+            margin-right: 2rem;
+            @media only screen and (min-width: $bp-small) {
+                margin-right: 10rem;
+            }
+        }
+
+        &-change-btn {
+            transition: all 0.2s;
+        }
+
+        &-change-btn:link,
+        &-change-btn:visited {
+            color: $color-secondary-darkest;
+            font-weight: 700;
+        }
+
+        &-change-btn:hover {
+            text-decoration: none;
+            color: $color-secondary-dark;
+        }
+    }
+
+    &__order {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        text-align: center;
+        row-gap: 2rem;
+        &-cta {
+            border-radius: 1rem;
+            padding: 2rem 4rem;
+            text-decoration: none;
+            font-weight: 900;
+            transition: all 0.2s;
+            &:first-child {
+                color: $color-primary;
+                background-color: $color-primary-dark;
+                box-shadow: 0 1rem 1.5rem rgba($color-secondary-darkest, 0.3);
+                &:hover,
+                &:active {
+                    background-color: lighten($color-primary-dark, 10%);
+                }
+            }
+            &:last-child {
+                background-color: $color-secondary;
+                color: $color-secondary-dark;
+                &:hover,
+                &:active {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
