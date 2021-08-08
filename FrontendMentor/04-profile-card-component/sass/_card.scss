@@ -1,0 +1,75 @@
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+
+    &__hero {
+        background-image: url("../images/bg-pattern-card.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+    }
+    &__img {
+        width: 10rem;
+        height: 10rem;
+        position: relative;
+
+        img {
+            position: absolute;
+            transform: translate(5%, -167%);
+            border-radius: 50%;
+            width: 9rem;
+            height: 9rem;
+        }
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background-color: $color-white;
+            width: 10rem;
+            height: 10rem;
+            position: relative;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            border: 1px solid rgba($color-text-secondary, 0.2);
+        }
+    }
+    &__main {
+        margin-top: -3rem;
+        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid rgba($color-text-secondary,.5);
+        &-user {
+            font-size: 2rem;
+            span {
+                color: $color-text-secondary;
+            }
+        }
+        &-location {
+            color: $color-text-secondary;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__footer {
+        width: 100%;
+        height: 100%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        // border-top: 1px solid;
+
+        &__stats {
+            display: flex;
+            font-size: 1rem;
+            justify-content: space-around;
+            text-align: center;
+        }
+    }
+}
