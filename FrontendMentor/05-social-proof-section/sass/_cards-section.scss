@@ -9,13 +9,15 @@
     }
     &__card {
         width: 100%;
+        max-width: max-content;
+        min-width: min-content;
         background-color: var(--color-primary);
         margin-bottom: 2rem;
         border-radius: 1rem;
-        padding: 3rem;
+        padding: 2rem 3rem;
         @media only screen and (min-width: $bp-largest){
             margin-bottom: 0;
-            width: 28%;
+            width: 30%;
             height: 80%;
             padding-bottom: 8rem;
             &:nth-child(1){
@@ -41,8 +43,8 @@
                 border-radius: 50%;
             }
             &-data {
-                width: max-content;
-                margin-left: 2rem;
+                margin-left: 1rem;
+                min-width: max-content;
                 h2 {
                     font-size: 1.5rem;
                     color: var(--color-white-2);

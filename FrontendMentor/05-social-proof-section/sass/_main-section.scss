@@ -1,7 +1,7 @@
 .main {
     text-align: center;
 
-    @media only screen and (min-width: $bp-large){
+    @media only screen and (min-width: $bp-largest){
         grid-row: 1/2;
         grid-column: 1/ span 4;
         text-align: left;

@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media only screen and (min-width: $bp-large) {
+    margin-bottom: 1rem;
+    @media only screen and (min-width: $bp-largest) {
         grid-row: 1/2;
         grid-column: 6 / -1;
         align-items: start;
