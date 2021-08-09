@@ -27,6 +27,14 @@ html {
 }
 
 body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
     background-color: $color-bg;
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
     background-repeat: no-repeat;
@@ -44,8 +52,7 @@ body {
 
 .container {
     width: 95vw;
-    margin: 8vh auto;
-    @media only screen and (min-width: $bp-large) {
-        max-width: $bp-large;
+    @media only screen and (min-width: $bp-small) {
+        max-width: $bp-small;
     }
 }
