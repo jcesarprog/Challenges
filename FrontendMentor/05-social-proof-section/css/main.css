@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 :root {
   --color-primary: hsl(300, 43%, 22%);
-  --color-text-primary: hsl(303, 10%, 53%);
+  --color-text-primary:#937b92;
   --color-text-secondary: hsl(333, 80%, 67%);
   --color-white-1: hsl(0, 0%, 100%);
   --color-white-2: hsl(300, 24%, 96%);

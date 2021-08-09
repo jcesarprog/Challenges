@@ -1,7 +1,7 @@
-
+$bg-rating: hsl(303, 10%, 53%);
 :root {
     --color-primary: hsl(300, 43%, 22%);
-    --color-text-primary: hsl(303, 10%, 53%);
+    --color-text-primary:#{$bg-rating};
     --color-text-secondary: hsl(333, 80%, 67%);
     
     --color-white-1: hsl(0, 0%, 100%);
@@ -9,7 +9,7 @@
 }
 
 
-$bg-rating: hsl(303, 10%, 53%);
+
 
 $bp-large: 43.75em; //700px
 $bp-largest: 56.25em; //900px
