@@ -12,7 +12,7 @@
         align-items: start;
         
     }
-
+    
     &__container {
         width: 100%;
         text-align: center;
@@ -41,9 +41,10 @@
         &-text {
             color: var(--color-primary);
             font-weight: 700;
-            padding-block: 1rem;
+            padding-block: 1rem;            
             @media only screen and (min-width: $bp-large) {
                 margin-left: 2rem;
+                transform: translateY(.2rem);;
             }
         }
     }
