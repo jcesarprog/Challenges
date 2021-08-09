@@ -1,0 +1,18 @@
+.main {
+    text-align: center;
+
+    @media only screen and (min-width: $bp-large){
+        grid-row: 1/2;
+        grid-column: 1/ span 4;
+        text-align: left;
+    }
+    &__title{
+        color: var(--color-primary);
+    }
+
+    &__paragraph {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+        color: var(--color-text-primary);
+    }
+}

@@ -1,0 +1,21 @@
+
+:root {
+    --color-primary: hsl(300, 43%, 22%);
+    --color-text-primary: hsl(303, 10%, 53%);
+    --color-text-secondary: hsl(333, 80%, 67%);
+    
+    --color-white-1: hsl(0, 0%, 100%);
+    --color-white-2: hsl(300, 24%, 96%);
+}
+
+
+$bg-rating: hsl(303, 10%, 53%);
+
+$bp-large: 43.75em; //700px
+$bp-largest: 56.25em; //900px
+
+/*
+@media only screen and (min-width: $bp-large){
+        
+    }
+*/
