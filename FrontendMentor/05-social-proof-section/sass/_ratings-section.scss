@@ -20,10 +20,15 @@
         padding-block: 1rem;
         background-color: lighten($bg-rating, 40%);
         border-radius: 1rem;
-        @media only screen and (min-width: $bp-large) {
+        @media only screen and (min-width: $bp-largest) {
             display: flex;
-            width: max-content;
+            font-size: 1.1rem;
             padding-inline: 2rem;
+
+        }
+
+        @media only screen and (min-width: $bp-largest) {
+            width: max-content;
             &:nth-child(2){
                 align-self: center;
             }
@@ -42,7 +47,7 @@
             color: var(--color-primary);
             font-weight: 700;
             padding-block: 1rem;            
-            @media only screen and (min-width: $bp-large) {
+            @media only screen and (min-width: $bp-largest) {
                 margin-left: 2rem;
                 transform: translateY(.4rem);
             }

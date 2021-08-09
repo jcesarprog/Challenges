@@ -44,7 +44,7 @@ body {
 }
 
 .container {
-  width: 90vw;
+  width: 80vw;
   margin: 0 auto;
   padding-block: 6rem;
   display: -webkit-box;
@@ -66,7 +66,7 @@ body {
           align-items: center;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 56.25em) {
   .container {
     display: -ms-grid;
     display: grid;
@@ -76,11 +76,6 @@ body {
         grid-template-rows: repeat(2, 1fr);
     gap: 3rem 0;
     font-size: 1rem;
-  }
-}
-
-@media only screen and (min-width: 43.75em) {
-  .container {
     font-size: 1.5rem;
     max-width: 120rem;
   }
@@ -173,16 +168,22 @@ body {
           border-radius: 1rem;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 56.25em) {
   .ratings__container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    font-size: 1.1rem;
+    padding-inline: 2rem;
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  .ratings__container {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding-inline: 2rem;
   }
   .ratings__container:nth-child(2) {
     -webkit-align-self: center;
@@ -215,7 +216,7 @@ body {
   padding-block: 1rem;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 56.25em) {
   .ratings__container-text {
     margin-left: 2rem;
     -webkit-transform: translateY(0.4rem);
@@ -224,7 +225,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 56.25em) {
   .cards {
     grid-column: 1/-1;
     display: -webkit-box;
@@ -235,6 +236,9 @@ body {
        -moz-column-gap: 2rem;
             column-gap: 2rem;
     height: 100%;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
   }
 }
 
@@ -247,9 +251,10 @@ body {
   padding: 3rem;
 }
 
-@media only screen and (min-width: 43.75em) {
+@media only screen and (min-width: 56.25em) {
   .cards__card {
     margin-bottom: 0;
+    width: 28%;
     height: 80%;
     padding-bottom: 8rem;
   }
@@ -292,6 +297,9 @@ body {
 }
 
 .cards__card-header-data {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin-left: 2rem;
 }
 
