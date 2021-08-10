@@ -1,0 +1,11 @@
+body {
+    background-color: var(--color-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    margin-block: 5rem ;
+    flex: 0 0 35rem;
+}
