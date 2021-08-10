@@ -27,7 +27,7 @@
             @media only screen and (min-width: $bp-tablet) {
                 grid-row: 1/2;
                 grid-column: 2/3;
-                transform: translateY(40%);
+                transform: translateY(35%);
             }
         }
         &:nth-child(3) {
@@ -35,7 +35,7 @@
             @media only screen and (min-width: $bp-tablet) {
                 grid-row: 3/4;
                 grid-column: 2/3;
-                transform: translateY(-40%);
+                transform: translateY(-35%);
             }
         }
         &:nth-child(4) {
