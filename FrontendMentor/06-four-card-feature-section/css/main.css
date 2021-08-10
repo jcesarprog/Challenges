@@ -102,6 +102,10 @@ body {
   max-width: 45rem;
 }
 
+.header > * {
+  margin-top: .5rem;
+}
+
 @media only screen and (min-width: 48em) {
   .header {
     margin-bottom: 0rem;

@@ -1,6 +1,9 @@
 .header {
    margin-bottom: 5rem;
    max-width: 45rem;
+   & > * {
+      margin-top: .5rem;
+   }
    @media only screen and (min-width: $bp-tablet) {
    margin-bottom: 0rem;
 
