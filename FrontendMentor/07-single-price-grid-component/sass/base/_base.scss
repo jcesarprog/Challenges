@@ -1,0 +1,36 @@
+@use "../abstract/" as *;
+// @use "../abstract/variables" as var;
+@use "sass:color";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media only screen and (min-width: $var-bp-md) {
+        font-size: 74%; // 1rem = 14.4px
+        
+    }
+}
+body {
+    background-color: $var-color-bg-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: $var-bp-md) {
+        height: 100vh;
+    }
+}
+
+
+

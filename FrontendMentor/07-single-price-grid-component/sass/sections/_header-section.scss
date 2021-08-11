@@ -1,0 +1,27 @@
+@use "../abstract/" as *;
+@use "sass:color";
+.header {
+    background-color: $var-color-white;
+    // height: 30vh;
+    padding: $var-padding-default;
+    @include mixin-padding-bp-md;
+
+    & > * {
+        margin-bottom: 1.5rem;
+    }
+    &__title {
+        color: $var-color-primary;
+        margin-top: 1rem;
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+    &__subtitle{
+        color: color.scale($var-color-secondary, $lightness: -10%);
+    }
+    &__paragraph {
+        margin-top: 2rem;
+        color: $var-color-bg;
+        word-spacing: .5rem;
+    }
+}

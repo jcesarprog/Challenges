@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --color-primary: #2ab2af;
+  --color-secondary: #c0df34;
+  --color-white: white;
+  --color-bg-main: #e5eef6;
+  --color-bg: #98a6bd;
+  --font-size-defualt: $font-size-default;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (min-width: 40em) {
+  html {
+    font-size: 74%;
+  }
+}
+
+body {
+  background-color: #e5eef6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (min-width: 40em) {
+  body {
+    height: 100vh;
+  }
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.6rem;
+}
+
+.header > * {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 90vw;
+  border-radius: 0.5rem;
+  margin-block: 5rem;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 40em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90rem;
+  }
+}
+
+.header,
+.sub,
+.about {
+  width: 100%;
+}
+
+@media only screen and (min-width: 40em) {
+  .header {
+    grid-column: 1/-1;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .footer {
+    grid-column: 1/-1;
+  }
+}
+
+.header {
+  background-color: white;
+  padding: 2rem;
+}
+@media only screen and (min-width: 40em) {
+  .header {
+    padding-inline: 4rem;
+  }
+}
+.header > * {
+  margin-bottom: 1.5rem;
+}
+.header__title {
+  color: #2ab2af;
+  margin-top: 1rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.header__subtitle {
+  color: #b5d621;
+}
+.header__paragraph {
+  margin-top: 2rem;
+  color: #98a6bd;
+  word-spacing: 0.5rem;
+}
+
+.sub {
+  background-color: #2ab2af;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+@media only screen and (min-width: 40em) {
+  .sub {
+    padding-inline: 4rem;
+  }
+}
+.sub__title {
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+.sub__paragraph {
+  color: #a1e9e8;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sub__paragraph-price {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+.sub__description {
+  color: white;
+  margin-bottom: 2rem;
+}
+.sub__btn:link, .sub__btn:visited {
+  text-decoration: none;
+  background-color: #c0df34;
+  color: white;
+  font-weight: 700;
+  padding: 2rem 5rem;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.3);
+}
+.sub__btn:hover, .sub__btn:active {
+  background-color: #a1bf1e;
+}
+
+.about {
+  background-color: #5ad8d6;
+  color: white;
+  padding: 2rem;
+}
+@media only screen and (min-width: 40em) {
+  .about {
+    padding-inline: 4rem;
+  }
+}
+.about__title {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.about__list {
+  list-style: none;
+}
+.about__list-item {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.footer {
+  margin-block: 2rem;
+}
+.footer .attribution {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.footer .attribution a:link,
+.footer .attribution a:visited {
+  color: #3c5ee7;
+}

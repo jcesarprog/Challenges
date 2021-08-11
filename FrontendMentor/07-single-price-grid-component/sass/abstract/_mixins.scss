@@ -1,0 +1,6 @@
+@use "../abstract/variables" as var;
+@mixin padding-bp-md {
+    @media only screen and (min-width: var.$bp-md) {
+        padding-inline: 4rem;
+    }
+}

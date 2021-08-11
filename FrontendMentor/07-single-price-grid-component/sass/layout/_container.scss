@@ -1,0 +1,35 @@
+@use "../abstract/" as *;
+
+.container {
+    width: 90vw;
+    border-radius: .5rem;
+    margin-block: 5rem;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.2);
+    @media only screen and (min-width: $var-bp-md) {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 90rem;
+        // align-content: center;
+        // align-items: center;
+        // justify-items: center;
+    }
+}
+
+.header,
+.sub,
+.about {
+    width: 100%;
+}
+
+.header {
+    @media only screen and (min-width: $var-bp-md) {
+        grid-column: 1 / -1 ;
+    }
+}
+
+.footer {
+    @media only screen and (min-width: $var-bp-md) {
+        grid-column: 1 / -1 ;
+        
+    }
+}

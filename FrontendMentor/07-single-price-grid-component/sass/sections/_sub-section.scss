@@ -1,0 +1,55 @@
+@use "../abstract/" as *;
+@use "sass:color";
+.sub {
+    background-color: $var-color-primary;
+    padding: $var-padding-default;
+    @include mixin-padding-bp-md;
+
+    &__title {
+        color: $var-color-white;
+        font-size: $var-font-size-default;
+        margin-bottom: 1.5rem;
+    }
+
+    &__paragraph {        
+        color: color.scale($var-color-primary, $lightness: 60%);
+        font-weight: 400;
+        margin-bottom: 1rem;
+
+        display: flex;        
+        align-items: center;
+
+        &-price{
+        color: $var-color-white;
+        font-size: 3rem;
+        font-weight: 700;
+        margin-right: 2rem;
+        }
+    }
+
+    &__description {
+        color: $var-color-white;
+        margin-bottom: 2rem;
+        
+    }
+
+    &__btn:link,
+    &__btn:visited{
+        text-decoration: none;
+        background-color: $var-color-secondary;
+        color: $var-color-white;
+        font-weight: 700;
+        padding: 2rem 5rem;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: .5rem;
+        box-shadow: 0 1.5rem 2rem rgba(0,0,0,.3);
+    }
+
+    &__btn:hover,
+    &__btn:active {
+        background-color: color.scale($var-color-secondary, $lightness: -20%);
+    }
+    padding-bottom: 3rem;
+}

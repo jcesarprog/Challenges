@@ -1,0 +1,15 @@
+@use "../abstract/variables" as var;
+
+.footer {
+    margin-block: 2rem;
+
+    .attribution {
+        font-size: 1.2rem;
+        text-align: center;
+        a:link,
+        a:visited {
+          color: hsl(228, 78%, 57%);
+        }
+      }
+}
+
