@@ -1,0 +1,12 @@
+@use "../abstract/" as *;
+
+.container {
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-block: min(3rem, 5vh);
+    margin: 0 auto;
+    align-items: center;
+
+    
+}

@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+
+.header {
+    padding: $var-padding-default;
+    @media only screen and (min-width: $var-bp-small) {
+        padding: 1rem;
+        align-self: start;
+        // align-content: start;
+    }
+    &__logo {
+        @media only screen and (min-width: $var-bp-small) {
+            padding: 1rem;
+            align-self: center;
+        }
+        img {
+            width: 40%;
+        }
+        margin-bottom: 4rem;
+    }
+    &__hero {
+        @media only screen and (min-width: $var-bp-small) {
+            align-self: center;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}

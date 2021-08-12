@@ -1,0 +1,44 @@
+@use "../abstract/" as *;
+@use "sass:color";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+    // background-color: $var-color-primary;
+    background: url("../../images/bg-mobile.svg") $var-color-primary;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    @media only screen and (min-width: $var-bp-small){
+        background: url("../../images/bg-desktop.svg") $var-color-primary;
+        background-repeat: no-repeat;
+        background-position: left -2rem ;
+        background-size: 75% 90%;        
+    }
+    @media only screen and (min-width: $var-bp-large){
+        height: 100vh;
+        background: url("../../images/bg-desktop.svg") $var-color-primary;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;        
+    }
+}
