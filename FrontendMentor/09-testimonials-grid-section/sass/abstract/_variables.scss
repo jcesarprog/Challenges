@@ -1,0 +1,20 @@
+
+$color-primary:hsl(263, 55%, 52%);
+
+$color-secondary-1: hsl(217, 19%, 35%);
+$color-secondary-2: hsl(219, 29%, 14%);
+
+$color-white:hsl(0, 0%, 100%);
+
+$color-neutral-1: hsl(210, 46%, 95%);
+$color-neutral-2: hsl(0, 0%, 81%);
+
+/*
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+
+$font-size-default: 1.3rem;
+
+$bp-md: 37.5em; //600px
+$bp-h-small: 22.5em; //360px

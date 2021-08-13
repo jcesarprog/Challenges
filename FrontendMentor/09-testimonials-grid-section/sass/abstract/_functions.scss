@@ -1,0 +1,10 @@
+@use "./variables" as var;
+
+@function set-color($color) {
+    @if (lightness($color) > 60) {
+      @return var.$color-secondary-1;
+    }
+    @else {
+      @return var.$color-white;
+    }
+}

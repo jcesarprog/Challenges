@@ -1,0 +1,16 @@
+@use "../abstract/" as *;
+
+.attribution {
+    padding-block: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: rgba($var-color-primary,.7);
+    a:link,
+    a:visited {
+        color: $var-color-primary;
+    }
+
+    @media only screen and (min-width: $var-bp-md) {
+        font-size: 2rem;
+    }
+}

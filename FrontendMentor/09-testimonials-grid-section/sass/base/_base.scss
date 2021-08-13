@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media  only screen and (max-height: $var-bp-h-small) {
+        font-size: 36%;
+    }
+}
+
+body {
+    background-color: $var-color-neutral-1;
+    min-height: 100vh;
+    @include mixin-flex-center;
+    flex-direction: column;
+}
