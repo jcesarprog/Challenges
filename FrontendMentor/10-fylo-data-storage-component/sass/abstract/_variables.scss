@@ -1,0 +1,23 @@
+$color-gradient-light:hsl(6, 100%, 80%);
+$color-gradient-dark: hsl(335, 100%, 65%);
+
+$color-primary-1: hsl(228, 56%, 26%);
+$color-primary-2:hsl(229, 57%, 11%);
+
+$color-secondary-1: hsl(243, 100%, 93%);
+$color-secondary-2: hsl(229, 7%, 55%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$font-size-default: 1.4rem;
+
+$padding-default: 4rem;
+
+// BREAKPOINTS
+$bp-h: 23.44em; //375px
+$bp-h-md: 25.88em; //414px
+$bp-h-lg: 48em;//768px
+
+$bp-w-md: 35em;// 560px
+$bp-w-lg: 62.5em;//1000px
+$bp-w-xg: 75em;//1200px

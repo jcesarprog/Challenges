@@ -1,0 +1,18 @@
+@use "../abstract/" as *;
+
+.container {
+    width: min(90vw, 100rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.main {
+    position: relative;
+    @media only screen and (min-width:$var-bp-w-md) {
+        align-self: end;
+        height: 70%
+    }
+    
+
+}

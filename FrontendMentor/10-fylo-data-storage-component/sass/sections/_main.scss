@@ -1,0 +1,142 @@
+@use "../abstract/" as *;
+@use "sass:color";
+@use "sass:math";
+.main {
+    background-color: $var-color-primary-1;
+    border-radius: 1rem;
+    padding: $var-padding-default;
+    position: relative;
+
+    &__title {
+        text-align: center;
+        color: color.scale($var-color-white, $blackness: 10%);
+        font-size: 1.4rem;
+        font-weight: 400;
+        span {
+            color: $var-color-secondary-1;
+            font-weight: 700;
+        }
+        @media only screen and (min-width: $var-bp-w-md){
+            text-align: start;
+
+        }
+        @media only screen and (min-width: $var-bp-w-md) and (max-height: $var-bp-h-md) {
+            text-align: start;
+            font-size: 1.2rem;
+        }
+        
+    }
+    &__graph {
+        position: relative;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%;
+        height: 2rem;
+        background-color: $var-color-primary-2;
+        border-radius: 1rem;
+        &-bar {
+            position: absolute;
+            top: 13%;
+            left: 1%;
+            border-radius: 1rem;
+
+            width: math.percentage(math.div(815,1000));
+            height: 75%;
+            background-image: linear-gradient(to right, $var-color-gradient-light, $var-color-gradient-dark);
+        }
+        &-circle {
+            position: absolute;
+            right: 0;
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%;
+            background-color: $var-color-white;
+        }
+    }
+    &__values {
+        width: 100%;
+        @include mixin-flex-center;
+        justify-content: space-between;
+        color: $var-color-white;
+        font-size: 1.1rem;
+        &-min {
+        }
+        &-max {
+        }
+    }
+    &__highlight {
+        @include mixin-flex-center;
+        background-color: $var-color-white;
+        width:55%;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -5rem;
+        left: 23.5%;
+
+
+        @media only screen and (min-width: $var-bp-w-md) {
+            width: 37%;
+            bottom: 85%;
+            left: 55%;
+        }
+
+        @media only screen and (min-width: $var-bp-w-md) and (max-height: $var-bp-h-md) {
+            width: 50%;
+            left: 38%;
+        }
+
+        @media only screen and (min-width: $var-bp-w-md) and (max-height: $var-bp-h) {
+            width: 60%;
+            left: 27%;
+        }
+
+        @media only screen and (min-width: $var-bp-h-lg) {
+            width: 54%;
+            left: 32%;
+        }
+        
+        @media only screen and (min-width: $var-bp-h-lg) and (max-height: $var-bp-h){
+            width: 45%;
+            left: 44%;
+            
+        }
+
+        @media only screen and (min-width: $var-bp-w-lg) {
+            width: 37%;
+            left: 53%;
+        }
+
+        @media only screen and (min-width: $var-bp-w-lg) and (max-height: $var-bp-h-lg) {
+            width: 55%;
+            left: 32%;
+        }
+
+       
+
+        
+        
+        
+        &-number {
+            font-size: 4rem;
+            margin-right: 1rem;
+        }
+        &-text {
+            font-size: 1.7rem;
+            color: $var-color-secondary-2;
+            font-weight: 700;
+        }
+        &-arrow{
+            @media only screen and (min-width: 35em) {
+                position: absolute;
+                width: 3rem;
+                height: 5rem;
+                background-color:$var-color-white;
+                right:0;
+                bottom:-40%;
+                clip-path: polygon(100% 0, 0 0, 100% 100%);
+            }
+        }
+    }
+}

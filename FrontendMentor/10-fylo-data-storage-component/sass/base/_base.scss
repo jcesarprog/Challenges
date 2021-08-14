@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media only screen and (min-width: $var-bp-w-md) and (max-height: $var-bp-h-md) {
+        font-size: 52%;
+    }
+    @media only screen and (min-width: $var-bp-w-lg) {
+        font-size: 80%;
+    }
+
+    @media only screen and (min-width: $var-bp-w-xg) {
+        font-size: 100%;
+
+    }
+}
+
+body {
+    min-height: 100vh;
+    @include mixin-flex-center;
+    flex-direction: column;
+
+    background-image: url('../assets/img/bg-mobile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-width: $var-bp-w-md) {
+        background-image: url('../assets/img/bg-desktop.png');
+
+    }
+
+}
