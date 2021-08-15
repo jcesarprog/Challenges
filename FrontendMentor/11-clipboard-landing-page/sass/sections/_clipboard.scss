@@ -1,0 +1,24 @@
+@use "../abstract/" as *;
+
+.clipboard {
+    margin-top: 15rem;
+    & > * {
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (min-width: $var-bp-w-md) {
+        margin-top: 5rem;
+    }
+
+    &__paragraph {
+        word-spacing: 2px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        
+       
+    }
+    @media only screen and (min-width: $var-bp-w-md) {
+        margin-bottom: 8rem;
+    }
+}

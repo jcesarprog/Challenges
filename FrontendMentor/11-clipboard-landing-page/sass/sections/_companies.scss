@@ -1,0 +1,23 @@
+@use "../abstract/" as *;
+
+.companies {
+    margin-top: 5rem;
+    @include mixin-flex-center;   
+    flex-direction: column;
+    row-gap:6rem;
+    
+    @media only screen and (min-width: $var-bp-w-md) {
+        flex-direction: row;
+        column-gap: 3rem;
+        row-gap:0rem;
+        justify-content: space-evenly;
+
+    }
+
+    img {
+        @media only screen and (min-width: $var-bp-w-md) {
+            width: 6rem;
+            // height: 4rem;
+        }
+    }
+}

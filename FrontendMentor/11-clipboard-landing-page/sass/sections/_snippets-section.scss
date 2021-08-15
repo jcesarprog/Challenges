@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+
+.snippets {
+    & > * {
+        margin-bottom: 2rem;
+    }
+    &__paragraph {
+        margin-bottom: 6rem;
+        @media only screen and (min-width:$var-bp-w-md) {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 8rem;
+            transform: translateX(-4%);
+
+        }
+    }
+    &__box {
+        @include mixin-flex-center;
+        flex-direction: column;
+        @media only screen and (min-width: $var-bp-w-md) {
+            flex-direction: row;
+            column-gap: 4rem;
+        }
+        &-img {
+            
+            img {
+                width: 100%;
+            }
+            margin-bottom: 5rem;
+        }
+
+        &-features {
+            @include mixin-flex-center;
+            flex-direction: column;
+            row-gap: 5rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                row-gap: 3rem;
+                
+            }
+            .feature {
+                width: 100%;
+            }
+        }
+    }
+    margin-bottom: 10rem;
+}

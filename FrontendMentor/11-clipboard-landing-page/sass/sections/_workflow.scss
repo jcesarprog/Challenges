@@ -1,0 +1,30 @@
+@use "../abstract/" as *;
+@use "../components/feature";
+.workflow {
+    & > * {
+        margin-bottom: 2rem;
+    }
+    &__paragraph {
+        margin-bottom: 5rem;
+        @media only screen and (min-width: $var-bp-w-md) {
+            margin-bottom: 2rem;
+        }
+    }
+    &__features {
+        @media only screen and (min-width: $var-bp-w-md) {
+            @include mixin-flex-center;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100%;
+        }
+        .feature {
+            @media only screen and (min-width: $var-bp-w-md) {
+                width: 30%;
+                & > * {
+                    align-self: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

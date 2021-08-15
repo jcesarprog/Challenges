@@ -1,0 +1,32 @@
+@use "../abstract/" as *;
+
+.feature {
+    @include mixin-flex-center;
+    flex-direction: column;
+    row-gap: 1rem;
+    h2 {
+        @media only screen and (min-width: $var-bp-w-md) {
+            font-size: 2rem;
+            align-self: start;
+            text-align: start;
+        }
+    }
+    p {
+        @media only screen and (min-width: $var-bp-w-md) {
+            width:  80%;
+            font-size: 1rem;
+            // margin-right: auto;
+            align-self: start;
+            text-align: start;
+
+        }
+    }
+
+    &__img {
+        // margin-block: 5rem;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+
+    }
+    
+}

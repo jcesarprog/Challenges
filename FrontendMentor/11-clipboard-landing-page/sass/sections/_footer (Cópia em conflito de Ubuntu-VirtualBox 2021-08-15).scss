@@ -1,0 +1,67 @@
+@use "../abstract/" as *;
+
+.footer {
+    background-color: rgba($var-color-secondary-2, 0.1);
+    @include mixin-flex-center;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @media only screen and (min-width: $var-bp-w-md) {
+        flex-direction: row;
+        row-gap: 0;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 5rem;
+        height: 5rem;
+        @media only screen and (min-width: $var-bp-w-md) {
+            margin-inline: 10%;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        width: 90%;
+        @media only screen and (min-width: $var-bp-w-md) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        }
+        &-item {
+        @media only screen and (min-width: $var-bp-w-md) {
+            font-size: ;
+        }
+            text-align: center;
+            margin-block: 3rem;
+            cursor: pointer;
+            &:hover {
+                color: $var-color-primary-1;
+            }
+        }
+    }
+
+    &__socials {
+        @include mixin-flex-center;
+        column-gap: 3rem;
+
+        i {
+            color: $var-color-secondary-1;
+            cursor: pointer;
+            &:hover {
+                color: $var-color-primary-1;
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 1.2rem;
+        text-align: center;
+        color: $var-color-secondary-1;
+        a:link,
+        a:visited {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}

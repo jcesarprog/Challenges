@@ -1,0 +1,49 @@
+@use "../abstract/" as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media only screen and (min-width: $var-bp-w-xl) {
+        font-size: 100%;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background: url("../assets/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 120%;
+    @media only screen and (min-width: $var-bp-w-md) {
+        background: url("../assets/images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        background-size: 120%;
+
+
+
+
+    }
+}
+.container {
+    // margin: 0 auto;
+    // width: 95vw;
+
+    & > * {
+        padding: 2rem;
+        @media only screen and (min-width: $var-bp-w-md) {
+            padding: 0;
+        }
+    }
+}

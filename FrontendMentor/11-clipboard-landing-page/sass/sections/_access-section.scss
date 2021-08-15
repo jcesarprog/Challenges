@@ -1,0 +1,22 @@
+@use "../abstract/" as *;
+.access {
+    & > * {
+        margin-bottom: 2rem;
+    }
+    &__paragraph {
+        @media only screen and (min-width: $var-bp-w-md) {
+            width: 90%;
+            margin: 0 auto;
+            transform: translateX(-2%);
+            margin-bottom: 5rem;
+        }
+    }
+    &__img {
+        margin-block: 6rem;
+        width: 100%;
+        @media only screen and (min-width: $var-bp-w-md) {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+}
