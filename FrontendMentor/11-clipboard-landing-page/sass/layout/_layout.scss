@@ -1,10 +1,10 @@
 @use "../abstract/" as *;
 
-body{
-    @media only screen and (min-width:$var-bp-w-md) {
-        background-image: url("../../assets/images/bg-header-desktop.png");
-    }
-}
+// body{
+//     @media only screen and (min-width:$var-bp-w-md) {
+//         background-image: url("../../assets/images/bg-header-desktop.png");
+//     }
+// }
 // .container {
 //     @media only screen and (min-width:$var-bp-w-lg) {
 //         display: grid;
