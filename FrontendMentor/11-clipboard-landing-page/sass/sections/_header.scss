@@ -10,17 +10,17 @@
     }
 
     &__logo {
-        height: 50vh;
-        width: 100%;
         @include mixin-flex-center;
-        margin-bottom: -4rem;
-        @media only screen and (min-width: $var-bp-w-md) {
-            margin-bottom: 2rem;
-        }
-        @media only screen and (min-width: $var-bp-w-lg) {
-            height: 25vh;
-            // margin-bottom: -2rem;
-        }
+        width: 100%;
+        margin-block: 4rem;
+        // height: 50vh;
+        // @media only screen and (min-width: $var-bp-w-md) {
+        //     // margin-bottom: 2rem;
+        // }
+        // @media only screen and (min-width: $var-bp-w-lg) {
+        //     // height: 25vh;
+        //     // margin-bottom: -2rem;
+        // }
     }
 
     &__title {

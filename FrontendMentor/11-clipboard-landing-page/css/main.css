@@ -142,8 +142,6 @@ p {
   margin-bottom: 2rem;
 }
 .header__logo {
-  height: 50vh;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,17 +151,8 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -4rem;
-}
-@media only screen and (min-width: 37.5em) {
-  .header__logo {
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (min-width: 46.88em) {
-  .header__logo {
-    height: 25vh;
-  }
+  width: 100%;
+  margin-block: 4rem;
 }
 .header__paragraph {
   font-size: 1.3rem;
@@ -474,13 +463,14 @@ p {
 }
 .footer__list-item {
   text-align: center;
-  margin-block: 3rem;
+  margin-block: 1rem;
   cursor: pointer;
 }
 @media only screen and (min-width: 37.5em) {
   .footer__list-item {
     font-size: 1rem;
     margin-block: 1rem;
+    text-align: start;
   }
 }
 .footer__list-item:hover {
@@ -518,6 +508,7 @@ p {
 }
 
 .attribution {
+  padding-block: 1rem;
   font-size: 1.2rem;
   text-align: center;
   color: #4c545d;

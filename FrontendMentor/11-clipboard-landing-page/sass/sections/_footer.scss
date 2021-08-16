@@ -29,18 +29,21 @@
             padding: 0;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(max-content, 4rem));
+            // align-items: start;
             margin-right: auto;
             gap: 1rem 2rem;
         }
         &-item {
         
             text-align: center;
-            margin-block: 3rem;
+            margin-block: 1rem;
             cursor: pointer;
 
             @media only screen and (min-width: $var-bp-w-md) {
                 font-size: 1rem;
                 margin-block: 1rem;
+                text-align: start;
+
             }
 
             &:hover {
@@ -70,6 +73,7 @@
 }
 
 .attribution {
+    padding-block: 1rem;
     font-size: 1.2rem;
     text-align: center;
     color: $var-color-secondary-1;
