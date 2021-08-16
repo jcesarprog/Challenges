@@ -1,0 +1,6 @@
+@use "../abstract/" as *;
+.container {
+    // margin-inline: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}

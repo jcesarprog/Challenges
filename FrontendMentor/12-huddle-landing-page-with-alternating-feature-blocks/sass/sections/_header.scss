@@ -1,0 +1,89 @@
+@use "../abstract/" as *;
+@use "../components/btn";
+.header {
+
+    background: url("../images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media only screen and (min-width: $var-bp-w-md) {
+        background: url("../images/bg-hero-desktop.svg");
+
+    }
+    &__nav{
+        padding-block: 3rem;
+        padding-inline: 2rem;
+        @include mixin-flex-center;
+        justify-content: space-between;
+
+        &-logo{
+            img{
+                width: 11rem;
+            }
+        }
+        &-btn{
+            
+        }
+    }
+    &__content{
+        padding-inline: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+        // align-content: start;
+        align-items: start;
+        column-gap: 1rem;
+    }
+    &__main {
+        @include mixin-flex-center;
+        flex-direction: column;
+        text-align: center;
+        &-title{
+            font-size: 2.5rem;
+            margin-block: 2rem;
+        }
+        &-text{
+            font-size: 1.7rem;
+            line-height: 2.2rem;
+        }
+        &-btn{
+            margin-block: 3rem;       
+            width:70%;
+        }
+        @media only screen and (min-width: $var-bp-w-md) {
+            text-align: start;
+            &-title{
+                margin-block: 0rem;
+                font-size: 2rem;
+                margin-right:auto;
+            }
+            &-text{
+                font-size: 1.2rem;
+            }
+            &-btn{
+                margin-block: 2rem;       
+                text-align: center;
+                // width:40%;
+                align-self: start;
+            }
+        }
+        @media only screen and (min-width: $var-bp-w-lg) {
+            text-align: start;
+            &-title{
+                margin-block: 3rem;
+                font-size: 3.5rem;
+                margin-right:auto;
+            }
+            &-text{
+                font-size: 1.6rem;
+            }
+            &-btn{
+                margin-block: 3rem;       
+                text-align: center;
+                width:50%;
+                align-self: start;
+            }
+        }
+    }
+    &__illustration{
+        
+    }
+}

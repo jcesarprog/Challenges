@@ -1,0 +1,151 @@
+@use "../abstract/" as *;
+
+.footer {
+    background-color: $var-color-secondary-3;
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    &__baloon {
+        @include mixin-flex-center;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+        transform: translateY(-50%);
+        text-align: center;
+        padding-block: 3rem;
+        max-width: 85%;
+        margin: 0 auto;
+
+        &-title {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        &-btn {
+            width: 65%;
+        }
+        @media only screen and (min-width: $var-bp-w-lg) {
+            max-width: 65%;
+            &-title {
+                font-size: 2.4rem;
+                margin-bottom: 2rem;
+            }
+            &-btn {
+                width: 65%;
+                font-size: 1.5rem;
+            }
+        }
+        @media only screen and (min-width: $var-bp-w-xl) {
+            &-btn {
+                width: 45%;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__main {
+        @media only screen and (min-width: $var-bp-w-md) {
+            @include mixin-flex-center;
+            margin-top: -4rem;
+            justify-content: space-between;
+            width: 100%;;
+        }
+        color: #fff;
+        &-principal {
+            @media only screen and (min-width: $var-bp-w-md) {
+                max-width: 25%;
+            }
+            &-logo {
+                img {
+                    width: 15rem;
+                }
+                margin-bottom: 3rem;
+            }
+            &-contact {
+                .contact {
+                    width: 100%;
+                    @include mixin-flex-center;
+                    justify-content: start;
+                    gap: 2rem;
+                    &__logo {
+                        img {
+                            width: 1.5rem;
+                        }
+                        align-self: start;
+                        // margin-right: auto;
+                    }
+                    &__content {
+                        font-size: 1.4rem;
+                    }
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        &-about {
+            margin-block: 5rem;
+            width: 50%;
+            &-list {
+                list-style: none;
+                @media only screen and (min-width: $var-bp-w-md) {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));               
+                    gap: 3rem;     
+                }
+                &-item {
+                    margin-bottom: 1.5rem;
+                    width: max-content;
+                    cursor: pointer;
+                @media only screen and (min-width: $var-bp-w-md) {
+                    margin: 0 auto;
+                }
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        &-socials {
+            margin-top: -3rem;
+            @include mixin-flex-center;
+            gap: 2rem;
+            padding-block: 2rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                align-self: start;
+                margin-top: 4rem;
+
+            }
+            span {
+                width: 4rem;
+                height: 4rem;
+                cursor: pointer;
+                &:hover i.u-circle {
+                    border: 1px solid $var-color-primary;
+                }
+            }
+            i {
+                &:hover {
+                    color: $var-color-primary;
+                }
+            }
+        }
+    }
+    &__copy__attribution {
+        color: #fff;
+        &-copy {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        &-attribution {
+            font-size: 1.2rem;
+            text-align: center;
+            a:link,
+            a:visited {
+                color: $var-color-secondary-2;
+            }
+            a:hover {
+                color: $var-color-primary;
+            }
+        }
+    }
+}

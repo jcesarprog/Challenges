@@ -1,0 +1,28 @@
+@use "../abstract/" as *;
+
+.btn{
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: #fff;
+    // border: 1px solid;
+    border-radius: 10rem;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 700;
+    word-spacing: 1px;
+    box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
+    &:hover {
+        color: rgba(#000,.6)
+    }
+}
+
+.btn-color {
+    background-color: $var-color-primary;
+    color: #fff;
+    &:hover {
+        background-color: rgba($var-color-primary,.8);
+        color: #fff;
+
+
+    }
+}

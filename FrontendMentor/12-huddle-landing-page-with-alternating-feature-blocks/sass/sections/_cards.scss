@@ -1,0 +1,37 @@
+@use "../abstract/" as *;
+
+.cards {
+    padding-inline: 2rem;
+    padding-block: 3rem;
+    
+    .card {
+        padding: 3rem;
+        @include mixin-flex-center;
+        flex-direction: column;
+        gap: 4rem;
+        text-align: center;
+        box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+        @media only screen and (min-width: $var-bp-w-md) {
+            flex-direction: row;
+            &:nth-child(odd){           
+                flex-direction: row-reverse;
+            }
+        }
+        
+        &__illustration {
+            // width:
+        }
+        &__main {
+            &-title {
+                font-size: 2.3rem;
+                color: $var-color-secondary-3;
+            }
+            &-text {
+                margin-top: 1rem;
+                font-size: 1.3rem;
+                color: $var-color-secondary-2;
+            }
+        }
+        margin-bottom: 4rem;
+    }
+}
