@@ -1,0 +1,46 @@
+@use "../abstract/" as *;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    // width: 100%; // FIXME 
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media only screen and (min-width: $var-bp-w-lg){
+        font-size: 100%;
+    }
+}
+
+body {
+    min-height: 100vh;
+    background-color: $var-color-bg-main;
+    
+    
+    
+    // background-size: 100% 100%;
+    // background-position: -1000px center;
+}
+
+a:link,
+a:visited {
+    color: $var-color-white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    color: $var-color-p
+}

@@ -1,0 +1,18 @@
+@use "../abstract/" as *;
+@use "sass:color";
+.btn {
+    color: $var-color-white;
+    padding: 1rem 3rem;
+    // border: 1px solid;
+    border-radius: 10rem;
+    text-align: center;
+    font-weight: 700;
+    background-image: linear-gradient(to right,
+    color.scale($var-color-cta-1, $lightness:-25%), 
+    $var-color-cta-2);
+    &:hover {
+        background-image: linear-gradient(to right,
+    color.scale($var-color-cta-1, $lightness:-25%), 
+    color.scale($var-color-cta-1, $lightness:-25%));
+    }
+}

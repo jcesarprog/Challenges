@@ -1,0 +1,21 @@
+@use "sass:color";
+$color-bg-main: hsl(218, 28%, 13%);
+$color-bg-footer:hsl(216, 53%, 9%);
+$color-bg-testimonial: hsl(219, 30%, 18%);
+$color-bg-intro-signup:hsl(217, 28%, 15%);
+
+$color-cta-1: hsl(176, 68%, 64%);
+$color-cta-2:hsl(198, 60%, 50%);
+
+$color-error:hsl(0, 100%, 63%);
+
+$color-white: hsl(0, 0%, 100%);
+
+$color-p: color.scale($color-white,$lightness: -20%);
+
+$font-size-default: 1.4rem;
+
+// ? BREAKPOINTS
+$bp-w-md: 37.5em;//600px
+$bp-w-lg: 46.88em;//750px
+$bp-w-xl: 68.75em;//1100px
