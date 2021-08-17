@@ -205,6 +205,16 @@ h1, h2, h3, a {
     width: 40%;
   }
 }
+@media only screen and (min-width: 46.88em) {
+  .header__hero-btn {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 68.75em) {
+  .header__hero-btn {
+    max-width: 30rem;
+  }
+}
 
 .features {
   margin-top: 4rem;
@@ -232,7 +242,8 @@ h1, h2, h3, a {
 }
 @media only screen and (min-width: 68.75em) {
   .features {
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    max-width: 80%;
   }
 }
 .features .feature {

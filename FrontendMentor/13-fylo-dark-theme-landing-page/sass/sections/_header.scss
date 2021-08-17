@@ -90,6 +90,12 @@
             width: 60%;
         @media only screen and (min-width: $var-bp-w-md){
             width: 40%;
+        }
+        @media only screen and (min-width: $var-bp-w-lg){
+            width: 50%;
+        }
+        @media only screen and (min-width: $var-bp-w-xl){
+            max-width: 30rem;
 
         }
         }
