@@ -1,0 +1,14 @@
+@use "../abstract/" as *;
+
+.container{
+    & > * {
+        padding-inline: 2rem;
+        padding-block: 2rem;
+    }
+    @media only screen and (min-width: $var-bp-w-xl) {
+        & > * {
+        padding-inline: 10rem;
+        }
+
+    }
+}

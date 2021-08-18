@@ -1,0 +1,33 @@
+@use "../abstract/" as *;
+
+.header {
+    width: 100%;
+    &__nav {
+        @include mixin-flex-center;
+        justify-content: space-between;
+        &-logo {
+            img {
+                width: 8rem;
+                @media only screen and (min-width: $var-bp-w-md) {
+                    width: 10rem;
+                }
+            }
+        }
+        &-navigation {
+            &-list {
+                @include mixin-flex-center;
+                column-gap: 2rem;
+                &-item {
+                    a {
+                        color: $var-color-primary-2;
+                        font-weight: 400;
+                        font-size: 1.2rem;
+                        @media only screen and (min-width: $var-bp-w-md) {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

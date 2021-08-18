@@ -1,0 +1,55 @@
+@use "../abstract/" as *;
+
+.getaccess{
+    padding-block: 5rem;
+    @include mixin-flex-center;
+    flex-direction: column;
+    background-color: $var-color-primary-2;
+    row-gap:2rem;
+    text-align: center;
+    color:$var-color-neutral-1;
+    @media only screen and (min-width: $var-bp-w-md) {
+        text-align: start;
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+    &__content{
+        @media only screen and (min-width: $var-bp-w-md) {
+            width: 40%;
+        }
+        &-title{
+            margin-bottom: 1.5rem;;
+        }
+        &-text{
+            font-size: 1.5rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &__form{
+        width: 100%;        
+        @include mixin-flex-center;
+        row-gap: 2rem;
+        flex-direction: column;
+        @media only screen and (min-width: $var-bp-w-md) {
+            width: 60%;
+            align-items: start;
+        }
+        &-input{
+            width: 90%;
+            padding: 1rem;
+        }
+        &-btn{
+            width: 90%;
+            font-size: 1.3rem;
+            word-spacing: 2px;
+            @media only screen and (min-width: $var-bp-w-md) {
+                width: 40%;
+                word-spacing: 0;
+                font-size: .9rem;
+                text-align: center;
+            }
+        }
+    }
+}

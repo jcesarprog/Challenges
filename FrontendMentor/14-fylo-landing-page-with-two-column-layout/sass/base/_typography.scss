@@ -1,0 +1,14 @@
+@use "../abstract/" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+

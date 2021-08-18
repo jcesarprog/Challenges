@@ -1,0 +1,97 @@
+@use "../abstract/" as *;
+.footer {
+    padding-block: 3rem;
+    background-color: $var-color-primary-1;
+    &__logo {
+        img {
+            width: 17rem;
+        }
+        margin-bottom: 3rem;
+    }
+    &__content {
+        color: $var-color-neutral-1;
+        @media only screen and (min-width: $var-bp-w-md) {
+            @include mixin-flex-center;
+            justify-content: space-between;
+            align-items: start;
+        }
+        &-contact {
+            .contact {
+                @include mixin-flex-center;
+                justify-content: start;
+                column-gap: 2rem;
+                margin: 1.5rem 0;
+                &__icon {
+                    img {
+                        width: 1.7rem;
+                    }
+                }
+                &-text {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        &-about {
+            margin-top: 3rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                margin-top: 1.8rem;
+            }
+            &-list {
+                text-decoration: none;
+                &-item {
+                    a {
+                        color: $var-color-neutral-1;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        &:hover {
+                            color: $var-color-primary-2;
+                        }
+                    }
+                    margin-bottom: 1rem;
+                    &:nth-of-type(4) {
+                        margin-bottom: 3rem;
+                        @media only screen and (min-width: $var-bp-w-md) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &-socials {
+            padding-block: 1rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                margin-top: .5rem;
+            }
+            @include mixin-flex-center;
+            column-gap: 1rem;
+            .fa-stack {
+                cursor: pointer;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: 400;
+
+                &:hover {
+                    color: $var-color-secondary-2;
+                }
+                i {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &__attribuition {
+        padding-block: 1rem;
+        @media only screen and (min-width: $var-bp-w-md) {
+            margin-top: 2rem;
+            padding-block: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            color: $var-color-neutral-1;
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}

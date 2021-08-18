@@ -1,0 +1,32 @@
+@use "../abstract/" as *;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px
+    @media only screen and (min-width: $var-bp-w-xl) {
+        font-size: 100%;
+    }
+}
+
+body {
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    display: block;
+}

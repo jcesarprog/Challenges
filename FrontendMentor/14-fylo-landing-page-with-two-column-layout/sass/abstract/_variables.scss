@@ -1,0 +1,22 @@
+$color-primary-1: hsl(243, 87%, 12%);
+$color-primary-2: hsl(238, 22%, 44%);
+
+$color-secondary-1: hsl(224, 93%, 58%);
+$color-secondary-2: hsl(170, 45%, 43%);
+
+$color-neutral-1: hsl(240, 75%, 98%);
+$color-neutral-2: hsl(0, 0%, 75%);
+
+// ? BREAKPOINTS
+
+// ? small devices landscape
+$bp-w-md: 37.5em; // 600px
+
+// ? normal devices
+$bp-w-lg: 47em; // 800px
+
+// ? large devices
+$bp-w-xl: 62.5em; //1000px
+
+// ? huge devices
+$bp-w-hg: 81.25em; //1000px
