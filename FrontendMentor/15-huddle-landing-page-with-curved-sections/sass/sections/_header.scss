@@ -1,0 +1,29 @@
+@use "../abstract/" as *;
+
+@use "../components/btn";
+.header {
+    width: 100%;
+    &__nav {
+        @include mixin-flex-center;
+        justify-content: space-between;
+        @media only screen and (min-width: $var-bp-w-md) {
+            padding-inline: 2rem;
+            padding-block: 1rem;
+        }
+        &-logo {
+            img{
+                width: 13rem;
+                @media only screen and (min-width: $var-bp-w-md) {
+                    width: 16rem;
+                }
+            }
+        }
+        &-btn:link,
+        &-btn:visited {
+            color: $var-color-primary-2;
+            border: 1px solid $var-color-primary-2;
+            background-color: transparent;
+            font-weight: 400;
+        }
+    }
+}

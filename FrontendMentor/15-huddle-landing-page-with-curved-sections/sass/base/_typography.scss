@@ -1,0 +1,11 @@
+@use "../abstract/" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}

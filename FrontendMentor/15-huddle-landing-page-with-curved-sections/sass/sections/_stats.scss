@@ -1,0 +1,45 @@
+@use "../abstract/" as *;
+@use  "sass:color";
+
+.stats {
+    &__data {
+        @include mixin-flex-center;
+        flex-direction: column;
+        row-gap: 5rem;
+        @media only screen and (min-width: $var-bp-w-md) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        &-main {
+            position: relative;
+            text-align: center;
+            &::before {
+                content: "";
+                display: block;
+                width: 2.5rem;
+                height: 2.5rem;
+                position: absolute;
+                // background-color: red;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                top: -2rem;
+            }
+            &-number {
+                font-size: 3.7rem;
+            }
+            &-text {
+                // color: color.scale($var-color-neutral-2, $lightness: 20%, $alpha: 50%);
+                color: rgba($var-color-neutral-2, .7);
+                word-spacing: 1px;
+                font-size: 1.1rem;
+            }
+        }
+
+        &-main:nth-child(1)::before {
+            background-image: url("../assets/images/icon-communities.svg");
+        }
+        &-main:nth-child(2)::before {
+            background-image: url("../assets/images/icon-messages.svg");
+        }
+    }
+}

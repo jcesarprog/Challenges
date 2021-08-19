@@ -1,0 +1,40 @@
+@use "../abstract/" as *;
+
+.hero{
+    // background-color: red;
+    @include mixin-flex-center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5rem;
+    &__content{
+        @include mixin-flex-center;
+        flex-direction: column;
+        row-gap: 2rem;
+        &-title{
+            font-size: 2rem;
+            
+        }
+        &-text{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            @media only screen and (min-width: $var-bp-w-md) {
+                width: 70%;
+                font-size: 1.2rem;
+            }
+
+        }
+        &-btn:link,
+        &-btn:visited {
+            
+        }
+    }
+    &__illustration{
+        img{
+            width: 100%;
+            @media only screen and (min-width: $var-bp-w-md) {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
